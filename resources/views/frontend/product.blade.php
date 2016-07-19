@@ -1,4 +1,4 @@
-@extends('frontend')
+﻿@extends('frontend')
 
 @section('content')
 
@@ -13,16 +13,15 @@
                     <ul class="news-type bgList">
                         <li class="active">
                             <a href="javascript:void(0)" rel="nofollow" data-type="tab" data-content="tab-infoproduct" data-parent="news-type" data-reset="news-home" title="Thông tin sản phẩm">
-                                Thông tin sản phẩm</a>
+  Giải độc gan Tuệ Linh</a>
                         </li>
                         <li>
                             <a href="javascript:void(0)" rel="nofollow" data-type="tab" data-content="tab-research01" data-parent="news-type" data-reset="news-home" title="Nhận biết bao bì">
-                                Nhận biết bao bì</a>
+                                Cà gai leo Tuệ Linh</a>
                         </li>
                         <li>
                             <a href="javascript:void(0)" rel="nofollow" data-type="tab" data-content="tab-video" data-parent="news-type" data-reset="news-home" title="Hướng dẫn sử dụng">
-                                Hướng dẫn sử dụng
-                            </a>
+   Trà Giải độc gan Tuệ Linh  </a>
                         </li>
                     </ul><!--//news-type-->
                     <div class="news-home" id="tab-infoproduct" style="display: block">

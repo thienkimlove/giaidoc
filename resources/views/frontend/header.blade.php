@@ -1,4 +1,4 @@
-<header class="header">
+﻿<header class="header">
     <div class="header-mid">
         <div class="fix">
             <h1>
@@ -25,11 +25,7 @@
                     <a class="{{(isset($page) && $page == 'index') ? 'active' : ''}}" href="{{url('/')}}" title="">TRANG CHỦ</a>
                 </li>
 
-                <li>
-                    <a class="{{(isset($page) && $page == 'product') ? 'active' : ''}}" href="{{url('product')}}" title="">Sản phẩm</a>
-                </li>
-
-                @if ($headerCategories->count() > 0)
+                   @if ($headerCategories->count() > 0)
                     @foreach ($headerCategories as $headerCategory)
                         <li>
                             <a class="{{(isset($page) && ($page == $headerCategory->slug || in_array($page, $headerCategory->subCategories->lists('slug')->all()))) ? 'active' : ''}}" href="{{url($headerCategory->slug)}}">{{$headerCategory->name}}</a>
@@ -45,8 +41,10 @@
                 @endif
 
 
-                <li>
-                    <a class="{{(isset($page) && $page == 'cau-hoi-thuong-gap') ? 'active' : ''}}" href="{{url('cau-hoi-thuong-gap')}}" title="">Hỏi đáp chuyên gia</a>
+         <li>
+                    <a class="{{(isset($page) && $page == 'product') ? 'active' : ''}}" href="{{url('product')}}" title="">Sản phẩm</a>
+                </li>       <li>
+                    <a class="{{(isset($page) && $page == 'cau-hoi-thuong-gap') ? 'active' : ''}}" href="{{url('cau-hoi-thuong-gap')}}" title="">Hỏi đáp</a>
                 </li>
                 <li>
                     <a class="{{(isset($page) && $page == 'video') ? 'active' : ''}}" href="{{url('video')}}" title="">Video</a>

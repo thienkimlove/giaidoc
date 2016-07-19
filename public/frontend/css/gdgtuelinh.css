@@ -1,15 +1,8 @@
-@charset "UTF-8";
-/*
-Theme Name: Theme name
-Theme URI: Theme URI
-Author: Team Codeshore
-Author URI: http://codeshore.com/
-Description: Description theme
-Version:  1.4
-*/
+﻿@charset "UTF-8";
 @font-face {
-  font-family: "Open Sans";
-  src: url("../font/open-sans.eot?") format("eot"), url("../font/open-sans.woff") format("woff"), url("../font/open-sans.ttf") format("truetype");
+  font-family: 'Open Sans';
+  src: url("../font/open-sans.eot"), url("../font/open-sans.ttf") format("truetype"), url("../font/open-sans.woff") format("woff");
+  font-weight: 400;
 }
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -27,16 +20,18 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
   background: transparent;
 }
 
 body {
-  font: 400 13px "Open Sans";
+  font-family: Arial, sans-serif;
+  font-size: 14px;
   line-height: 1.42;
   color: #333333;
-  background: #fff;
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 article, aside, details, figcaption, figure,
@@ -122,6 +117,10 @@ img {
   height: auto;
 }
 
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
 .cf:after, .fix:after, .layout-home .news-type:after, .layout-home .news-product01:after, .layout-home .col-left .news-type:after, .layout-home .col-left .news-list .item:after, .box-event .item:after, .box-filter:after {
   clear: both;
 }
@@ -182,7 +181,15 @@ img {
   margin-top: 11px;
   text-indent: -9090px;
 }
+#sidebar {
+  width: 300px;
+  position: absolute;
+}
 
+#sidebar.fixed {
+  position: fixed;
+  top: 100px;
+}
 #accordion {
   float: left;
   width: 100%;
@@ -314,7 +321,6 @@ img {
 
 .breadcrumbs {
   margin-bottom: 20px;
-  white-space: nowrap;
   font-weight: 600;
   color: #019444;
   text-transform: uppercase;
@@ -443,7 +449,7 @@ img {
   font-family: "Arial";
   font-weight: bold;
   color: #fff;
-  padding: 10px 8px;
+  padding: 10px 5px;
   text-transform: uppercase;
 }
 .nav-main > li ul {
@@ -508,7 +514,7 @@ img {
   height: 100%;
   top: 0;
   z-index: 99;
-  background: #ffd28e;
+  background: #3ab54a;
 }
 .menu-left .inner {
   float: left;
@@ -517,7 +523,7 @@ img {
 }
 .menu-left .inner .search {
   padding: 10px 20px;
-  background: #ffd28e;
+  background: #3ab54a;
 }
 .menu-left .inner .search .search-in {
   background: #fff;
@@ -546,7 +552,7 @@ img {
   background: url(../images/sprite.png) no-repeat -272px -144px;
 }
 .menu-left .inner .btn-menu {
-  top: 60px;
+  top: 80px;
   left: -52px;
   background: url(../images/sprite.png) no-repeat -240px -144px;
 }
@@ -567,7 +573,7 @@ img {
   text-transform: uppercase;
 }
 .menu-left .inner .nav-mobile > li > a.active {
-  background: #ffa300;
+  background: #019444;
 }
 .menu-left .inner .nav-mobile > li ul {
   padding: 0 20px;
@@ -1189,6 +1195,7 @@ img {
 .layout-home .news-home .item p {
   margin: 10px 10px 0 4px;
   color: #494949;
+  min-height: 60px;
 }
 .layout-home .news-home .item .related-post {
   border-top: 1px dashed #019444;
@@ -1369,6 +1376,9 @@ img {
   margin-bottom: 10px;
   line-height: 18px;
 }
+.layout-home .col-left .detail ul {
+  padding-left: 20px;
+}
 .layout-home .col-left .comment-post {
   border: 1px solid #ccc;
   background: #f2f2f2;
@@ -1395,7 +1405,7 @@ img {
   list-style: none;
 }
 .layout-home .col-left .box-media .list-video li {
-  padding: 10px 20px;
+  padding: 0 20px 10px 20px;
   background: url(../images/icon-9x10.png) no-repeat 0 13px;
 }
 .layout-home .col-left .box-media .list-video li a {
@@ -1875,7 +1885,7 @@ img {
   font-size: 18px;
   padding: 15px 0;
   text-transform: uppercase;
-  color: #b22420;
+  color: #019444;
 }
 
 .title01 {
@@ -2133,10 +2143,12 @@ img {
 .box-product .item h3 {
   margin-top: 15px;
   margin-bottom: 5px;
+  min-height: 70px;
+  line-height: 16px;
 }
 .box-product .item h3 a {
   color: #333;
-  font-size: 12px;
+  font-size: 13px;
 }
 .box-product .item h3 a:hover {
   color: #3ab54a;
@@ -2229,7 +2241,7 @@ img {
 }
 .box-news .item h3 {
   margin: 10px 10px 10px 4px;
-  min-height: 40px;
+  min-height: 70px;
 }
 .box-news .item .thumbs {
   position: relative;
@@ -2248,6 +2260,7 @@ img {
 .box-news .item p {
   margin: 10px 10px 0 4px;
   color: #494949;
+  min-height: 60px;
 }
 .box-news .item .related-post {
   border-top: 1px dashed #019444;
@@ -2804,7 +2817,7 @@ img {
 }
 .footer .copyRight {
   color: #fff;
-  background: #b22420;
+  background: #019444;
   text-align: center;
   padding: 20px 0;
   text-transform: uppercase;
@@ -3619,6 +3632,8 @@ img {
 
   .boxNews .listNews .item {
     width: 100%;
+    min-height: inherit;
+    margin-bottom: 10px;
   }
 
   .boxNews .listNews .thumb {
@@ -3733,6 +3748,11 @@ img {
   .layout-home .news-type li {
     width: 100%;
     margin: 0;
+    display: block;
+  }
+
+  .title-panel .menu-tabs {
+    display: block;
   }
 
   .box-slider {
