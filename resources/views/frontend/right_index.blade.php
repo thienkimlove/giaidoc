@@ -16,13 +16,6 @@
             @endif
         </div>
     @endif
-    @foreach ($rightBanners as $banner)
-        <div class="box-adv">
-            <a href="{{$banner->url}}">
-                <img src="{{url('files/'.$banner->image)}}" alt="Tue linh">
-            </a>
-        </div>
-    @endforeach
 
     <div class="boxHot cf" id="sidebar">
         <h3 class="global-title"><a href="{{url('tin-tuc')}}">Tin nổi bật</a></h3>
