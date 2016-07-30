@@ -23,8 +23,12 @@
             </a>
         </div>
     @endforeach
-	
-    <div class="boxHot cf" id="sidebar">
+  
+    
+    <div class="Social">
+       <div class="fb-page" data-href="https://www.facebook.com/giaidocgan.vn" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/giaidocgan.vn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/giaidocgan.vn">Giải Độc Gan Tuệ Linh</a></blockquote></div>
+     </div>
+     <div class="boxHot cf" id="sidebar">
         <h3 class="global-title"><a href="{{url('tin-tuc')}}">Tin nổi bật</a></h3>
         @foreach ($rightNews as $post)
             <div class="item cf">
@@ -38,8 +42,6 @@
         @endforeach
     </div>
     <!-- /endHot -->
-<div class="Social">
-       <div class="fb-page" data-href="https://www.facebook.com/giaidocgan.vn" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/giaidocgan.vn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/giaidocgan.vn">Giải Độc Gan Tuệ Linh</a></blockquote></div></div>
     </div>
     
 </div><!--//col-right-->

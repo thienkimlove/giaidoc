@@ -124,7 +124,21 @@ h1, h2, h3, h4 {
 .cf:after, .fix:after, .layout-home .news-type:after, .layout-home .news-product01:after, .layout-home .col-left .news-type:after, .layout-home .col-left .news-list .item:after, .box-event .item:after, .box-filter:after {
   clear: both;
 }
+.pc {
+  display: block;
+}
 
+.sp {
+  display: none;
+}
+.hotLine {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0 10px 10px;
+    z-index: 9999;
+  }
 .wrapper {
   overflow: hidden;
 }
@@ -181,14 +195,10 @@ h1, h2, h3, h4 {
   margin-top: 11px;
   text-indent: -9090px;
 }
-#sidebar {
-  width: 300px;
-  position: absolute;
-}
-
 #sidebar.fixed {
   position: fixed;
-  top: 100px;
+  width : 300px;
+  top: 20px;
 }
 #accordion {
   float: left;
@@ -3629,7 +3639,20 @@ h1, h2, h3, h4 {
     width: 100%;
     margin-top: 10px;
   }
+  .header-mid {
+    height: inherit;
+  }
+  .pc {
+    display: none;
+  }
 
+  .sp {
+    display: block;
+  }
+#sidebar.fixed {
+  position: relative;
+  width : 100%;
+}
   .boxNews .listNews .item {
     width: 100%;
     min-height: inherit;

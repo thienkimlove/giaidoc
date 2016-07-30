@@ -1,4 +1,6 @@
-﻿<header class="header">
+﻿<div class="hotLine sp">
+    <img src="{{url('frontend/images/hot.png')}}" alt="">
+  </div><header class="header">
     <div class="header-mid">
         <div class="fix">
             <h1>
