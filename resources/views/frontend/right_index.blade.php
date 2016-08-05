@@ -17,7 +17,7 @@
         </div>
     @endif
 
-    <div class="boxHot cf" id="sidebar">
+    <div class="boxHot cf">
         <h3 class="global-title"><a href="{{url('tin-tuc')}}">Tin nổi bật</a></h3>
         @foreach ($rightNews as $post)
             <div class="item cf">
